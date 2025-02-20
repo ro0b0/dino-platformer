@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bimv2s1rlmp02"]
+
+[ext_resource type="PackedScene" uid="uid://7xcfjq5qa8d6" path="res://Scenes/player.tscn" id="1_4v0fb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqvq1"]
+size = Vector2(19.6513, 17.6178)
+
+[node name="Level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_4v0fb")]
+position = Vector2(47, 162)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(160, 173)
+scale = Vector2(16.2839, 0.393817)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 6.42664)
+shape = SubResource("RectangleShape2D_jqvq1")
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+position = Vector2(0, 7.61776)
+color = Color(0.12549, 1, 1, 1)
+polygon = PackedVector2Array(-9.82564, -12.6963, 9.82564, -12.6963, 9.82564, 7.61777, -9.82564, 7.61777)
