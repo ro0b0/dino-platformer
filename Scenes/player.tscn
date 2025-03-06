@@ -135,3 +135,5 @@ shape = SubResource("RectangleShape2D_0e5m0")
 sprite_frames = SubResource("SpriteFrames_oh8gn")
 animation = &"walking"
 autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
